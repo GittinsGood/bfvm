@@ -12,10 +12,8 @@ public class Bfvm {
     }
 
     private int run() {
-        
         try {
             while (progpointer < program.length) {
-
                 switch (program[progpointer]) {
                     case '>' -> { datapointer++; if (datapointer == cellSize) datapointer = 0;}
                     case '<' -> { datapointer--; if (datapointer == -1) datapointer = cellSize-1;}
@@ -35,15 +33,12 @@ public class Bfvm {
         return 0;
     }
 
-    private void progJump(int direction) throws Exception {
+    private void progJump(int direction) {
         int loopdepth = 1;
         while (loopdepth > 0) {
             progpointer += direction;
             if (progpointer == -1) progpointer = program.length-1;
-            if (progpointer ==  program.length) progpointer = 0;
-            if (progpointer < 0 || progpointer > program.length) {
-                throw(new Exception("Program pointer out of bounds while traversing loop."));
-            }
+            else if (progpointer ==  program.length) progpointer = 0;
             char c = program[progpointer];
             // Whichever way the loop is going the loop counter incs/decs when the loop chats are found.
             loopdepth +=

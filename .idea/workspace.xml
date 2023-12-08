@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec0feac-d6c0-4738-9e6b-3c413ccc1826" name="Changes" comment="Created main and interpreter classes.">
+    <list default="true" id="1ec0feac-d6c0-4738-9e6b-3c413ccc1826" name="Changes" comment="Code tidy.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bfvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bfvm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="GittinsGood &lt;cgs.orangutan@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,27 +90,20 @@
       <option name="project" value="LOCAL" />
       <updated>1702061985578</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created main and interpreter classes.">
+      <option name="closed" value="true" />
+      <created>1702062208910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702062208910</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created main and interpreter classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created main and interpreter classes." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bfvm.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bfvm.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Code tidy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code tidy." />
   </component>
 </project>
