@@ -39,10 +39,9 @@ public class Bfvm {
             progpointer += direction;
             if (progpointer == -1) progpointer = program.length-1;
             else if (progpointer ==  program.length) progpointer = 0;
-            char c = program[progpointer];
             // Whichever way the loop is going the loop counter incs/decs when the loop chars are found.
             loopdepth +=
-            switch (c) {
+            switch (program[progpointer]) {
                 case '[' -> direction;
                 case ']' -> direction*-1;
                 default -> 0;
