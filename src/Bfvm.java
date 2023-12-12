@@ -8,7 +8,7 @@ public class Bfvm {
 
     public Bfvm(char[] program) {
         this.program = program;
-        System.out.println(">" + (run() == 0 ? "OK." : "Error"));
+        System.out.println("\n>" + (run() == 0 ? "OK." : "Error"));
     }
 
     private int run() {
@@ -33,12 +33,12 @@ public class Bfvm {
         return 0;
     }
 
-    private void progJump(int direction) {
+    private void progJump(int direction) throws Exception {
         int loopdepth = 1;
         while (loopdepth > 0) {
             progpointer += direction;
-            if (progpointer == -1) progpointer = program.length-1;
-            else if (progpointer ==  program.length) progpointer = 0;
+            if (progpointer == -1 || progpointer == program.length)
+                throw new Exception("Program loop ran outside the program.");
             // Whichever way the loop is going the loop counter incs/decs when the loop chars are found.
             loopdepth +=
             switch (program[progpointer]) {
